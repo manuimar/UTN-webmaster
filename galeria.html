@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jquery</title>
+    <link type="text/css" rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css">
+   
+    
+</head>
+
+<body>
+
+	<ul id="galeria">
+    	<li>
+            <a href="img/foto_1.jpg" >
+            	<img src="img/thumbs_1.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_2.jpg">
+            	<img src="img/thumbs_2.jpg" class="img2" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_3.jpg" >
+            	<img src="img/thumbs_3.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_4.jpg" >
+            	<img src="img/thumbs_4.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_5.jpg"  >
+            	<img src="img/thumbs_5.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_6.jpg"  >
+            	<img src="img/thumbs_6.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_7.jpg"  >
+            	<img src="img/thumbs_7.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_8.jpg"  >
+            	<img src="img/thumbs_8.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_9.jpg"  >
+            	<img src="img/thumbs_9.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="img/foto_10.jpg"   >
+            	<img src="img/thumbs_10.jpg" />
+            </a>
+        </li>
+    </ul>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $('#galeria li a').attr("data-fancybox", "imagenes");
+        });
+
+        $('#galeria li a').fancybox({
+            loop:true,
+            buttons:["zoom", "close"],
+            transitionEffect:"circular",
+        });
+
+
+        //  $('#galeria li a').fancybox(); se aplica fancybox a cada imagen, por separado, no las vincula
+        
+    </script>
+
+   
+
+
+</body>
+</html>
