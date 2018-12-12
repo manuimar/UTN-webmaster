@@ -1,10 +1,10 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: coral;
+	background: peru;
 }
 #contenedor{
-	width: 90%;
+	width: 88%;
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -24,7 +24,7 @@ body{
 	background: rgb(38,166,91);
 	width: 30%;
 	float: left;
-	height: 400px;
+	height: 380px;
 }
 
 /*0px - +1100px*/
